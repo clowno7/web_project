@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* styles.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.hero {
+  background: url("{% static 'main_app/img/hero-bg.jpg' %}") no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero .display-4 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero .lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-us, .services, .contact-us {
+  padding: 5rem 0;
+}
+
+.about-us img, .services img, .contact-us img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.services .service-box {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services .service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 2rem 0;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

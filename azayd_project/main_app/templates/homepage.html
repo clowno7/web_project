@@ -1,0 +1,131 @@
+ <!-- Load the static template tag library -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azayd IT Consulting Services</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main_app/styles.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'homepage' %}">
+                    <img src="{% static 'main_app/img/logo.png' %}" alt="Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'homepage' %}">Homepage</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about_us' %}">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'service' %}">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'blog_news' %}">Blog/News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'careers' %}">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container text-center">
+                <h1 class="display-4">Azayd IT Consulting Services</h1>
+                <p class="lead">Innovative solutions for your business needs</p>
+                <a href="{% url 'service' %}" class="btn btn-primary btn-lg">Our Services</a>
+            </div>
+        </section>
+        <section class="about-us py-5">
+            <div class="container">
+                <h2 class="text-center">About Us</h2>
+                <p class="lead text-center">
+                    Azayd IT Consulting Services is a leading provider of cutting-edge technologies and services, offering scalable solutions for businesses of all sizes.
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            Founded by a group of friends who started by scribbling their ideas on a piece of paper, today we offer smart, innovative services to dozens of clients. We develop SaaS products, provide Corporate Seminars, Industrial trainings and much more.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{% static 'main_app/img/about_us.jpg' %}" alt="About Us" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>IT Consulting</h4>
+                        <p>Expert advice to help you navigate the digital landscape and implement effective IT strategies.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>SaaS Solutions</h4>
+                        <p>We develop scalable and robust SaaS products tailored to meet your business needs.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Corporate Seminars</h4>
+                        <p>Enhance your team's skills with our comprehensive corporate seminars and training programs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us py-5">
+            <div class="container">
+                <h2 class="text-center">Contact Us</h2>
+                <p class="lead text-center">Get in touch with us to learn more about our services and how we can help your business grow.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Contact Information</h4>
+                        <p>Email: <a href="mailto:info@azayd.com">info@azayd.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                        <p>Address: 123 Consulting St, Business City</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Azayd IT Consulting Services. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
