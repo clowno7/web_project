@@ -2,11 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 /* styles.css */
+/* styles.css */
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
+  background-color: #f4f4f4;
 }
 
+/* Hero Section */
 .hero {
   background: url("{% static 'main_app/img/hero-bg.jpg' %}") no-repeat center center;
   background-size: cover;
@@ -29,17 +32,28 @@ body {
   margin-bottom: 2rem;
 }
 
-.about-us, .services, .contact-us {
-  padding: 5rem 0;
+/* About Us Section */
+.about-us {
+  background: url("{% static 'main_app/img/about_bg.jpg' %}") no-repeat center center;
+  background-size: cover;
+  color: white;
 }
 
-.about-us img, .services img, .contact-us img {
-  max-width: 100%;
-  border-radius: 10px;
+.about-us h2,
+.about-us p,
+.about-us img {
+  color: white;
+}
+
+/* Services Section */
+.services {
+  background: url("{% static 'main_app/img/services_bg.jpg' %}") no-repeat center center;
+  background-size: cover;
+  color: white;
 }
 
 .services .service-box {
-  background-color: #f8f9fa;
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 2rem;
@@ -52,6 +66,56 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Contact Us Section */
+.contact-us {
+  background: url("{% static 'main_app/img/contact_bg.jpg' %}") no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+/* Blog/News Section */
+.blog-news {
+  background: url("{% static 'main_app/img/blog_bg.jpg' %}") no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.blog-post {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Careers Section */
+.careers {
+  background: url("{% static 'main_app/img/careers_bg.jpg' %}") no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.job-opening {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job-opening:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
 .footer {
   background-color: #222;
   color: #ccc;
