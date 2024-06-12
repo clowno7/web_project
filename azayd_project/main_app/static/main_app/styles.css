@@ -67,11 +67,75 @@ body {
 }
 
 /* Contact Us Section */
+/* styles.css */
 .contact-us {
   background: url("{% static 'main_app/img/contact_bg.jpg' %}") no-repeat center center;
   background-size: cover;
   color: white;
+  position: relative;
+  padding: 5rem 0;
 }
+
+.contact-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 1;
+}
+
+.contact-us .container {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-us h2,
+.contact-us p,
+.contact-us label {
+  color: white;
+}
+
+.contact-form .form-control {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form .btn {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+.contact-info h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+}
+
+.contact-info i {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
 
 /* Blog/News Section */
 .blog-news {
