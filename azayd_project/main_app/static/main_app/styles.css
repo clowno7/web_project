@@ -9,6 +9,13 @@ body {
   background-color: #f4f4f4;
 }
 
+.logo{
+  width: 100px;
+  height: 150%;
+  position: relative;
+  top: 10px;
+}
+
 /* Hero Section */
 .hero {
   background: url("{% static 'main_app/img/hero-bg.jpg' %}") no-repeat center center;
@@ -43,7 +50,9 @@ body {
 .about-us p,
 .about-us img {
   color: white;
+  position: center;
 }
+
 
 /* Services Section */
 .services {
@@ -63,7 +72,7 @@ body {
 
 .services .service-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.904);
 }
 
 /* Contact Us Section */
